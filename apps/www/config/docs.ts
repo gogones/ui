@@ -145,7 +145,6 @@ export const docsConfig: DocsConfig = {
           title: "Sidebar",
           href: "/docs/components/sidebar",
           items: [],
-          label: "New",
         },
         {
           title: "Accordion",
@@ -156,6 +155,7 @@ export const docsConfig: DocsConfig = {
           title: "Alert",
           href: "/docs/components/alert",
           items: [],
+          label: "WIP",
         },
         {
           title: "Alert Dialog",
@@ -186,6 +186,7 @@ export const docsConfig: DocsConfig = {
           title: "Button",
           href: "/docs/components/button",
           items: [],
+          label: "WIP",
         },
         {
           title: "Calendar",
