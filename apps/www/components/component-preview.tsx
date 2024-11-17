@@ -8,9 +8,7 @@ import { cn } from "@/lib/utils"
 import { useConfig } from "@/hooks/use-config"
 import { CopyButton } from "@/components/copy-button"
 import { Icons } from "@/components/icons"
-import { StyleSwitcher } from "@/components/style-switcher"
 import { ThemeWrapper } from "@/components/theme-wrapper"
-import { V0Button } from "@/components/v0-button"
 import {
   Tabs,
   TabsContent,
@@ -125,10 +123,8 @@ export function ComponentPreview({
           )}
         </div>
         <TabsContent value="preview" className="relative rounded-md border">
-          <div className="flex items-center justify-between p-4">
-            <StyleSwitcher />
+          <div className="flex items-center justify-end p-4">
             <div className="flex items-center gap-2">
-              {description ? <V0Button name={name} /> : null}
               <CopyButton
                 value={codeString}
                 variant="outline"
