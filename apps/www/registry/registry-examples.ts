@@ -288,6 +288,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "button-sizes",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "example/button-sizes.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "calendar-demo",
     type: "registry:example",
     registryDependencies: ["calendar"],
