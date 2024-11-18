@@ -22,7 +22,7 @@ import {
 } from "../registry/schema"
 import { fixImport } from "./fix-import.mts"
 
-const REGISTRY_PATH = path.join(process.cwd(), "public/r")
+const REGISTRY_PATH = path.join(process.cwd(), "public/registry")
 
 const REGISTRY_INDEX_WHITELIST: z.infer<typeof registryItemTypeSchema>[] = [
   "registry:ui",
@@ -725,6 +725,15 @@ async function buildThemes() {
   --destructive: <%- colors.light["destructive"] %>;
   --destructive-foreground: <%- colors.light["destructive-foreground"] %>;
 
+  --success: <%- colors.dark["success"] %>;
+  --success-foreground: <%- colors.dark["success-foreground"] %>;
+
+  --warning: <%- colors.dark["warning"] %>;
+  --warning-foreground: <%- colors.dark["warning-foreground"] %>;
+
+  --info: <%- colors.dark["info"] %>;
+  --info-foreground: <%- colors.dark["info-foreground"] %>;
+
   --ring: <%- colors.light["ring"] %>;
 
   --radius: <%- colors.light["radius"] %>;
@@ -757,6 +766,15 @@ async function buildThemes() {
 
   --destructive: <%- colors.dark["destructive"] %>;
   --destructive-foreground: <%- colors.dark["destructive-foreground"] %>;
+
+  --success: <%- colors.dark["success"] %>;
+  --success-foreground: <%- colors.dark["success-foreground"] %>;
+
+  --warning: <%- colors.dark["warning"] %>;
+  --warning-foreground: <%- colors.dark["warning-foreground"] %>;
+
+  --info: <%- colors.dark["info"] %>;
+  --info-foreground: <%- colors.dark["info-foreground"] %>;
 
   --ring: <%- colors.dark["ring"] %>;
 }`

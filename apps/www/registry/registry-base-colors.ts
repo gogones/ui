@@ -22,11 +22,15 @@ export const baseColors = [
         "muted-foreground": "240 3.8% 46.1%",
         accent: "240 4.8% 95.9%",
         "accent-foreground": "240 5.9% 10%",
-        destructive: "11 67% 47%",
-        "destructive-foreground": "0 0% 98%",
 
-        success: "142.1 76.2% 36.3%",
-        "success-foreground": "355.7 100% 97.3%",
+        destructive: "0 62.8% 30.6%",
+        "destructive-foreground": "60 9.1% 97.8%",
+        success: "111 100% 29%",
+        "success-foreground": "0 0% 98%",
+        warning: "49 98% 65%",
+        "warning-foreground": "0 0% 98%",
+        info: "214 55% 45%",
+        "info-foreground": "0 0% 98%",
 
         border: "240 5.9% 90%",
         input: "240 5.9% 90%",
@@ -53,11 +57,15 @@ export const baseColors = [
         "muted-foreground": "24 5.4% 63.9%",
         accent: "12 6.5% 15.1%",
         "accent-foreground": "60 9.1% 97.8%",
+
         destructive: "0 62.8% 30.6%",
         "destructive-foreground": "60 9.1% 97.8%",
-
-        success: "142.1 76.2% 36.3%",
-        "success-foreground": "355.7 100% 97.3%",
+        success: "111 100% 29%",
+        "success-foreground": "0 0% 98%",
+        warning: "49 98% 65%",
+        "warning-foreground": "0 0% 98%",
+        info: "214 55% 45%",
+        "info-foreground": "0 0% 98%",
 
         border: "12 6.5% 15.1%",
         input: "12 6.5% 15.1%",
