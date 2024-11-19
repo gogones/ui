@@ -35,6 +35,39 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "alert-success",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "example/alert-success.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-info",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "example/alert-info.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "alert-warning",
+    type: "registry:example",
+    registryDependencies: ["alert"],
+    files: [
+      {
+        path: "example/alert-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "alert-dialog-demo",
     type: "registry:example",
     registryDependencies: ["alert-dialog", "button"],
