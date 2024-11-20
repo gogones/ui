@@ -1,4 +1,4 @@
-import { AlertCircle } from "lucide-react"
+import { InformationCircleIcon } from "@untr/icons"
 
 import {
   Alert,
@@ -9,7 +9,7 @@ import {
 export default function AlertInfo() {
   return (
     <Alert variant="info">
-      <AlertCircle className="h-4 w-4" />
+      <InformationCircleIcon />
       <AlertTitle>Info</AlertTitle>
       <AlertDescription>
         Your session has expired. Please log in again.

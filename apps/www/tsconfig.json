@@ -13,6 +13,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "resolveJsonModule": true,
+    "moduleResolution": "Bundler",
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
