@@ -150,12 +150,13 @@ export const docsConfig: DocsConfig = {
           title: "Accordion",
           href: "/docs/components/accordion",
           items: [],
+          label: "WIP",
         },
         {
           title: "Alert",
           href: "/docs/components/alert",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Alert Dialog",
@@ -186,7 +187,7 @@ export const docsConfig: DocsConfig = {
           title: "Button",
           href: "/docs/components/button",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Calendar",
