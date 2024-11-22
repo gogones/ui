@@ -1073,6 +1073,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "separator-dashed",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "example/separator-dashed.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "sheet-demo",
     type: "registry:example",
     registryDependencies: ["sheet"],

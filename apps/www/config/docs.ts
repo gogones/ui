@@ -333,6 +333,7 @@ export const docsConfig: DocsConfig = {
           title: "Separator",
           href: "/docs/components/separator",
           items: [],
+          label: "WIP",
         },
         {
           title: "Sheet",

@@ -1,6 +1,6 @@
 import { Separator } from "@/registry/default/ui/separator"
 
-export default function SeparatorDemo() {
+export default function SeparatorDashed() {
   return (
     <div>
       <div className="space-y-1">
@@ -9,12 +9,12 @@ export default function SeparatorDemo() {
           An open-source UI component library.
         </p>
       </div>
-      <Separator className="my-4" />
+      <Separator className="my-4" variant="dashed" />
       <div className="flex h-5 items-center space-x-4 text-sm">
         <div>Blog</div>
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" variant="dashed" />
         <div>Docs</div>
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" variant="dashed" />
         <div>Source</div>
       </div>
     </div>
