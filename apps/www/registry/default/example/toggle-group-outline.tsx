@@ -1,4 +1,4 @@
-import { Bold, Italic, Underline } from "lucide-react"
+import { AlignCenterIcon, AlignLeftIcon, AlignRightIcon } from "@untr/icons"
 
 import {
   ToggleGroup,
@@ -8,14 +8,14 @@ import {
 export default function ToggleGroupDemo() {
   return (
     <ToggleGroup variant="outline" type="multiple">
-      <ToggleGroupItem value="bold" aria-label="Toggle bold">
-        <Bold className="h-4 w-4" />
+      <ToggleGroupItem value="left" aria-label="Toggle align item">
+        <AlignLeftIcon />
       </ToggleGroupItem>
-      <ToggleGroupItem value="italic" aria-label="Toggle italic">
-        <Italic className="h-4 w-4" />
+      <ToggleGroupItem value="center" aria-label="Toggle align center">
+        <AlignCenterIcon />
       </ToggleGroupItem>
-      <ToggleGroupItem value="underline" aria-label="Toggle underline">
-        <Underline className="h-4 w-4" />
+      <ToggleGroupItem value="right" aria-label="Toggle align right">
+        <AlignRightIcon />
       </ToggleGroupItem>
     </ToggleGroup>
   )
