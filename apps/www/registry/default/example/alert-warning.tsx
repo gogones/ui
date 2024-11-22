@@ -1,9 +1,10 @@
+import { WarningErrorIcon } from "@untr/icons"
+
 import {
   Alert,
   AlertDescription,
   AlertTitle,
 } from "@/registry/default/ui/alert"
-import {WarningErrorIcon} from "@untr/icons";
 
 export default function AlertWarning() {
   return (
