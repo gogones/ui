@@ -150,7 +150,7 @@ export const docsConfig: DocsConfig = {
           title: "Accordion",
           href: "/docs/components/accordion",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Alert",
@@ -333,7 +333,7 @@ export const docsConfig: DocsConfig = {
           title: "Separator",
           href: "/docs/components/separator",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Sheet",
@@ -384,6 +384,7 @@ export const docsConfig: DocsConfig = {
           title: "Toggle",
           href: "/docs/components/toggle",
           items: [],
+          label: 'Done'
         },
         {
           title: "Toggle Group",
