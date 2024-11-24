@@ -3,6 +3,7 @@ import { Slot } from "@radix-ui/react-slot"
 import { ChevronRight, MoreHorizontal } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import { Card } from "@/registry/default/ui/card"
 
 const Breadcrumb = React.forwardRef<
   HTMLElement,
@@ -19,7 +20,7 @@ const BreadcrumbList = React.forwardRef<
   <ol
     ref={ref}
     className={cn(
-      "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
+      "text-muted-foreground flex flex-wrap items-center gap-1.5 break-words text-sm sm:gap-2.5",
       className
     )}
     {...props}
@@ -50,7 +51,10 @@ const BreadcrumbLink = React.forwardRef<
   return (
     <Comp
       ref={ref}
-      className={cn("transition-colors hover:text-foreground", className)}
+      className={cn(
+        "hover:text-foreground text-info font-bold transition-colors",
+        className
+      )}
       {...props}
     />
   )
@@ -66,7 +70,7 @@ const BreadcrumbPage = React.forwardRef<
     role="link"
     aria-disabled="true"
     aria-current="page"
-    className={cn("font-normal text-foreground", className)}
+    className={cn("light:text-gray-900 font-medium", className)}
     {...props}
   />
 ))
@@ -80,7 +84,7 @@ const BreadcrumbSeparator = ({
   <li
     role="presentation"
     aria-hidden="true"
-    className={cn("[&>svg]:w-3.5 [&>svg]:h-3.5", className)}
+    className={cn("light:text-gray-900 [&>svg]:h-3.5 [&>svg]:w-3.5", className)}
     {...props}
   >
     {children ?? <ChevronRight />}
@@ -95,7 +99,10 @@ const BreadcrumbEllipsis = ({
   <span
     role="presentation"
     aria-hidden="true"
-    className={cn("flex h-9 w-9 items-center justify-center", className)}
+    className={cn(
+      "text-info flex h-9 w-9 items-center justify-center",
+      className
+    )}
     {...props}
   >
     <MoreHorizontal className="h-4 w-4" />
@@ -103,6 +110,19 @@ const BreadcrumbEllipsis = ({
   </span>
 )
 BreadcrumbEllipsis.displayName = "BreadcrumbElipssis"
+
+const BreadcrumbCard = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ children }, ref) => (
+  <Card
+    ref={ref}
+    className="border-0 px-4 py-2 shadow-[0_0_20px_0_hsl(var(--sidebar-border))]"
+  >
+    {children}
+  </Card>
+))
+BreadcrumbCard.displayName = "BreadcrumbCard"
 
 export {
   Breadcrumb,
@@ -112,4 +132,5 @@ export {
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
+  BreadcrumbCard,
 }

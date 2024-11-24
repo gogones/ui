@@ -182,6 +182,7 @@ export const docsConfig: DocsConfig = {
           title: "Breadcrumb",
           href: "/docs/components/breadcrumb",
           items: [],
+          label: "Done",
         },
         {
           title: "Button",

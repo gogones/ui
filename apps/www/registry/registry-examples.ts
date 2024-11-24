@@ -211,6 +211,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "breadcrumb-card",
+    type: "registry:example",
+    registryDependencies: ["breadcrumb"],
+    files: [
+      {
+        path: "example/breadcrumb-card.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "button-demo",
     type: "registry:example",
     registryDependencies: ["button"],
