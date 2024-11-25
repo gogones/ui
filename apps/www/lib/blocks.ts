@@ -6,7 +6,7 @@ import { z } from "zod"
 import { Style } from "@/registry/registry-styles"
 import { registryEntrySchema } from "@/registry/schema"
 
-const DEFAULT_BLOCKS_STYLE = "new-york" satisfies Style["name"]
+const DEFAULT_BLOCKS_STYLE = "default" satisfies Style["name"]
 const BLOCKS_WHITELIST_PREFIXES = ["sidebar", "login"]
 const REGISTRY_BLOCK_TYPES = ["registry:block"]
 

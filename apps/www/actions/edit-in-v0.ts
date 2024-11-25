@@ -42,14 +42,13 @@ async function getRegistryItem(name: string, style: Style["name"]) {
 
 export async function editInV0({
   name,
-  style,
+  style = "default",
   url,
 }: {
   name: string
   style?: Style["name"]
   url: string
 }) {
-  style = style ?? "new-york"
   try {
     const registryItem = await getRegistryItem(name, style)
 

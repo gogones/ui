@@ -43,7 +43,7 @@ try {
 
   console.log("☀️ Capturing screenshots for light theme")
   for (const block of BLOCKS) {
-    const pageUrl = `http://localhost:3333/blocks/new-york/${block}`
+    const pageUrl = `http://localhost:3333/blocks/default/${block}`
     console.log(`- ${block}`)
 
     const page = await browser.newPage()
@@ -66,7 +66,7 @@ try {
 
   console.log("🌙 Capturing screenshots for dark theme")
   for (const block of BLOCKS) {
-    const pageUrl = `http://localhost:3333/blocks/new-york/${block}`
+    const pageUrl = `http://localhost:3333/blocks/default/${block}`
     console.log(`- ${block}`)
 
     const page = await browser.newPage()
