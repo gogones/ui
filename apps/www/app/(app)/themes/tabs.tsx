@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { ThemeWrapper } from "@/components/theme-wrapper"
-import CardsNewYork from "@/registry/new-york/example/cards"
+import CardsNewYork from "@/registry/default/example/cards"
 
 export function ThemesTabs() {
   return (

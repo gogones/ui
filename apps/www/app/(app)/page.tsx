@@ -10,8 +10,8 @@ import {
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header"
-import CardsNewYork from "@/registry/new-york/example/cards"
-import { Button } from "@/registry/new-york/ui/button"
+import CardsNewYork from "@/registry/default/example/cards"
+import { Button } from "@/registry/default/ui/button"
 
 export default function IndexPage() {
   return (
