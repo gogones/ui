@@ -15,8 +15,8 @@ export const CheckCircleIcon = React.forwardRef<SVGSVGElement, IconProps>(
         ref={forwardedRef}
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M12.25 8a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Zm-3 4a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5h-12Zm2.25 4.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75ZM9.25 20a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5h-12Z"
           fill={color}
         />
