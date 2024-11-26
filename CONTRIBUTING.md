@@ -25,10 +25,7 @@ apps
     ├── components
     ├── content
     └── registry
-        ├── default
-        │   ├── example
-        │   └── ui
-        └── new-york
+        └── default
             ├── example
             └── ui
 packages
@@ -145,10 +142,7 @@ We use a registry system for developing components. You can find the source code
 apps
 └── www
     └── registry
-        ├── default
-        │   ├── example
-        │   └── ui
-        └── new-york
+        └── default
             ├── example
             └── ui
 ```
