@@ -92,6 +92,7 @@ export const ui: Registry = [
     name: "breadcrumb",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-slot"],
+    registryDependencies: ["card"],
     files: [
       {
         path: "ui/breadcrumb.tsx",
@@ -531,6 +532,16 @@ export const ui: Registry = [
     files: [
       {
         path: "ui/table.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "table-card",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/table-card.tsx",
         type: "registry:ui",
       },
     ],
