@@ -1,0 +1,15 @@
+{
+  "name": "breadcrumb-card",
+  "type": "registry:example",
+  "registryDependencies": [
+    "breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "example/breadcrumb-card.tsx",
+      "content": "import {\n  Breadcrumb,\n  BreadcrumbCard,\n  BreadcrumbEllipsis,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/registry/default/ui/breadcrumb\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuTrigger,\n} from \"@/registry/default/ui/dropdown-menu\"\n\nexport default function BreadcrumbWithCard() {\n  return (\n    <BreadcrumbCard>\n      <Breadcrumb>\n        <BreadcrumbList>\n          <BreadcrumbItem>\n            <BreadcrumbLink href=\"/\">Home</BreadcrumbLink>\n          </BreadcrumbItem>\n          <BreadcrumbSeparator>\n            <BreadcrumbSeparator />\n          </BreadcrumbSeparator>\n          <BreadcrumbItem>\n            <DropdownMenu>\n              <DropdownMenuTrigger className=\"flex items-center gap-1\">\n                <BreadcrumbEllipsis />\n              </DropdownMenuTrigger>\n              <DropdownMenuContent align=\"start\">\n                <DropdownMenuItem>Documentation</DropdownMenuItem>\n                <DropdownMenuItem>Themes</DropdownMenuItem>\n                <DropdownMenuItem>GitHub</DropdownMenuItem>\n              </DropdownMenuContent>\n            </DropdownMenu>\n          </BreadcrumbItem>\n          <BreadcrumbSeparator>\n            <BreadcrumbSeparator />\n          </BreadcrumbSeparator>\n          <BreadcrumbItem>\n            <BreadcrumbLink href=\"/\">Components</BreadcrumbLink>\n          </BreadcrumbItem>\n          <BreadcrumbSeparator>\n            <BreadcrumbSeparator />\n          </BreadcrumbSeparator>\n          <BreadcrumbItem>\n            <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\n          </BreadcrumbItem>\n        </BreadcrumbList>\n      </Breadcrumb>\n    </BreadcrumbCard>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

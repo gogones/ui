@@ -1,13 +1,15 @@
 {
   "name": "separator",
+  "type": "registry:ui",
   "dependencies": [
     "@radix-ui/react-separator"
   ],
   "files": [
     {
-      "name": "separator.tsx",
-      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as SeparatorPrimitive from \"@radix-ui/react-separator\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst Separator = React.forwardRef<\n  React.ElementRef<typeof SeparatorPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>\n>(\n  (\n    { className, orientation = \"horizontal\", decorative = true, ...props },\n    ref\n  ) => (\n    <SeparatorPrimitive.Root\n      ref={ref}\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        \"shrink-0 bg-border\",\n        orientation === \"horizontal\" ? \"h-[1px] w-full\" : \"h-full w-[1px]\",\n        className\n      )}\n      {...props}\n    />\n  )\n)\nSeparator.displayName = SeparatorPrimitive.Root.displayName\n\nexport { Separator }\n"
+      "path": "ui/separator.tsx",
+      "content": "\"use client\"\n\nimport React from \"react\"\nimport * as SeparatorPrimitive from \"@radix-ui/react-separator\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface SeparatorProps {\n  orientation?: \"horizontal\" | \"vertical\"\n  variant?: \"default\" | \"dashed\"\n  className?: string\n}\n\nconst Separator: React.FC<SeparatorProps> = ({\n  orientation = \"horizontal\",\n  variant = \"default\",\n  className,\n}) => {\n  return (\n    <SeparatorPrimitive.Root\n      orientation={orientation}\n      className={cn(\n        \"shrink-0\", // Prevent flexbox from collapsing\n        {\n          // Orientation styles\n          \"w-full h-[1px]\": orientation === \"horizontal\",\n          \"h-full w-[1px]\": orientation === \"vertical\",\n\n          // Variant styles\n          \"bg-gray-200\": variant === \"default\",\n          \"border-none\": variant === \"default\",\n          \"border-dashed border-[0.5px] border-gray-300\": variant === \"dashed\",\n        },\n        className\n      )}\n    />\n  )\n}\n\nSeparator.displayName = SeparatorPrimitive.Root.displayName\n\nexport { Separator }\n",
+      "type": "registry:ui",
+      "target": ""
     }
-  ],
-  "type": "components:ui"
+  ]
 }

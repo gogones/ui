@@ -1,0 +1,15 @@
+{
+  "name": "toggle-group-disabled",
+  "type": "registry:example",
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "example/toggle-group-disabled.tsx",
+      "content": "import { AlignCenterIcon, AlignLeftIcon, AlignRightIcon } from \"@untr/icons\"\n\nimport {\n  ToggleGroup,\n  ToggleGroupItem,\n} from \"@/registry/default/ui/toggle-group\"\n\nexport default function ToggleGroupDemo() {\n  return (\n    <ToggleGroup disabled type=\"single\">\n      <ToggleGroupItem value=\"left\" aria-label=\"Toggle align item\">\n        <AlignLeftIcon />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"center\" aria-label=\"Toggle align center\">\n        <AlignCenterIcon />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"right\" aria-label=\"Toggle align right\">\n        <AlignRightIcon />\n      </ToggleGroupItem>\n    </ToggleGroup>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

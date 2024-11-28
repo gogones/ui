@@ -1,0 +1,15 @@
+{
+  "name": "button-sizes",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "example/button-sizes.tsx",
+      "content": "import { Mail } from \"lucide-react\"\n\nimport { Button } from \"@/registry/default/ui/button\"\n\nexport default function ButtonSizes() {\n  return (\n    <div className=\"flex gap-2\">\n      <Button size=\"icon\">\n        <Mail />\n      </Button>\n      <Button size=\"xs\">Extra Small</Button>\n      <Button size=\"sm\">Small</Button>\n      <Button>Normal</Button>\n      <Button size=\"lg\">Large</Button>\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

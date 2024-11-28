@@ -1,0 +1,15 @@
+{
+  "name": "toggle-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "toggle"
+  ],
+  "files": [
+    {
+      "path": "example/toggle-demo.tsx",
+      "content": "import { Toggle } from \"@/registry/default/ui/toggle\"\n\nexport default function ToggleDemo() {\n  return <Toggle aria-label=\"Toggle bold\">B</Toggle>\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}
