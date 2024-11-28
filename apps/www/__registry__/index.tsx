@@ -105,7 +105,7 @@ export const Index: Record<string, any> = {
       name: "breadcrumb",
       description: "",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["card"],
       files: [{
         path: "registry/default/ui/breadcrumb.tsx",
         type: "registry:ui",
@@ -656,6 +656,22 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/ui/table.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "table-grid": {
+      name: "table-grid",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/ui/table-grid.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/ui/table-grid.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -2488,6 +2504,22 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/table-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "table-grid-demo": {
+      name: "table-grid-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["table-grid"],
+      files: [{
+        path: "registry/default/example/table-grid-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/table-grid-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",
