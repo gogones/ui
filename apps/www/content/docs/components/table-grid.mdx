@@ -1,0 +1,86 @@
+---
+title: Table Grid
+description: A responsive table grid component.
+component: true
+---
+
+<ComponentPreview name="table-grid-demo" description="A table component." />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add table-grid
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="table-grid" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import {
+  TableGrid,
+  TableGridBody,
+  TableGridCell,
+  TableGridHead,
+  TableGridHeadCell,
+  TableGridRow,
+} from "@/components/ui/table"
+```
+
+```tsx
+<TableGrid>
+  <TableGridHead className="grid-cols-4">
+    <TableGridHeadCell>Invoice</TableGridHeadCell>
+    <TableGridHeadCell>Status</TableGridHeadCell>
+    <TableGridHeadCell>Method</TableGridHeadCell>
+    <TableGridHeadCell className="text-right">Amount</TableGridHeadCell>
+  </TableGridHead>
+
+  <TableGridBody>
+    {invoices.map((invoice) => (
+      <TableGridRow key={invoice.invoice} className="grid-cols-4">
+        <TableGridCell className="font-medium">
+          {invoice.invoice}
+        </TableGridCell>
+        <TableGridCell>{invoice.paymentStatus}</TableGridCell>
+        <TableGridCell>{invoice.paymentMethod}</TableGridCell>
+        <TableGridCell className="text-right">
+          {invoice.totalAmount}
+        </TableGridCell>
+      </TableGridRow>
+    ))}
+  </TableGridBody>
+</TableGrid>
+```
+
+## Data Grid
+
+You can use the `<TableGrid />` component to build more complex data grid. Combine it with [@tanstack/react-table](https://tanstack.com/table/v8) to create data grid with sorting, filtering and pagination.
+
+See the [Data Grid](/docs/components/data-grid) documentation for more information.
+
+You can also see an example of a data table in the [Tasks](/examples/tasks) demo.

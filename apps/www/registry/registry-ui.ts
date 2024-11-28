@@ -537,11 +537,11 @@ export const ui: Registry = [
     ],
   },
   {
-    name: "table-card",
+    name: "table-grid",
     type: "registry:ui",
     files: [
       {
-        path: "ui/table-card.tsx",
+        path: "ui/table-grid.tsx",
         type: "registry:ui",
       },
     ],

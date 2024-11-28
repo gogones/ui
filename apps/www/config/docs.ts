@@ -299,6 +299,7 @@ export const docsConfig: DocsConfig = {
           title: "Pagination",
           href: "/docs/components/pagination",
           items: [],
+          label: "WIP",
         },
         {
           title: "Popover",
@@ -365,6 +366,13 @@ export const docsConfig: DocsConfig = {
           title: "Table",
           href: "/docs/components/table",
           items: [],
+          label: "WIP",
+        },
+        {
+          title: "Table Grid",
+          href: "/docs/components/table-grid",
+          items: [],
+          label: "WIP",
         },
         {
           title: "Tabs",

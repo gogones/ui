@@ -1194,6 +1194,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "table-grid-demo",
+    type: "registry:example",
+    registryDependencies: ["table-grid"],
+    files: [
+      {
+        path: "example/table-grid-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "tabs-demo",
     type: "registry:example",
     registryDependencies: ["tabs"],
