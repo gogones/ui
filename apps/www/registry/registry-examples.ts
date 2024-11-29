@@ -618,6 +618,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "data-grid-demo",
+    type: "registry:example",
+    registryDependencies: ["data-grid"],
+    files: [
+      {
+        path: "example/data-grid-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "date-picker-demo",
     type: "registry:example",
     registryDependencies: ["button", "calendar", "popover"],

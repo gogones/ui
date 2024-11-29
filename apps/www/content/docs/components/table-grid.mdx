@@ -63,9 +63,7 @@ import {
   <TableGridBody>
     {invoices.map((invoice) => (
       <TableGridRow key={invoice.invoice} className="grid-cols-4">
-        <TableGridCell className="font-medium">
-          {invoice.invoice}
-        </TableGridCell>
+        <TableGridCell className="font-medium">{invoice.invoice}</TableGridCell>
         <TableGridCell>{invoice.paymentStatus}</TableGridCell>
         <TableGridCell>{invoice.paymentMethod}</TableGridCell>
         <TableGridCell className="text-right">

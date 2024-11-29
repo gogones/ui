@@ -65,6 +65,12 @@ export default function TableDemo() {
           <TableHead>Method</TableHead>
           <TableHead className="text-right">Amount</TableHead>
         </TableRow>
+        <TableRow>
+          <TableHead className="w-[100px]">Invoice</TableHead>
+          <TableHead>Status</TableHead>
+          <TableHead>Method</TableHead>
+          <TableHead className="text-right">Amount</TableHead>
+        </TableRow>
       </TableHeader>
       <TableBody>
         {invoices.map((invoice) => (

@@ -239,6 +239,13 @@ export const docsConfig: DocsConfig = {
           title: "Data Table",
           href: "/docs/components/data-table",
           items: [],
+          label: "WIP",
+        },
+        {
+          title: "Data Grid",
+          href: "/docs/components/data-grid",
+          items: [],
+          label: "WIP",
         },
         {
           title: "Date Picker",

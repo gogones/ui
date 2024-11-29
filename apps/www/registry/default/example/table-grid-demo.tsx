@@ -3,7 +3,7 @@ import {
   TableGridBody,
   TableGridCell,
   TableGridHead,
-  TableGridHeadCell,
+  TableGridHeader,
   TableGridRow,
 } from "@/registry/default/ui/table-grid"
 
@@ -55,12 +55,14 @@ const invoices = [
 export default function TableDemo() {
   return (
     <TableGrid>
-      <TableGridHead className="grid-cols-4">
-        <TableGridHeadCell>Invoice</TableGridHeadCell>
-        <TableGridHeadCell>Status</TableGridHeadCell>
-        <TableGridHeadCell>Method</TableGridHeadCell>
-        <TableGridHeadCell className="text-right">Amount</TableGridHeadCell>
-      </TableGridHead>
+      <TableGridHeader>
+        <TableGridRow className="grid-cols-4">
+          <TableGridHead>Invoice</TableGridHead>
+          <TableGridHead>Status</TableGridHead>
+          <TableGridHead>Method</TableGridHead>
+          <TableGridHead className="text-right">Amount</TableGridHead>
+        </TableGridRow>
+      </TableGridHeader>
 
       <TableGridBody>
         {invoices.map((invoice) => (
