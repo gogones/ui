@@ -172,6 +172,7 @@ export const docsConfig: DocsConfig = {
           title: "Avatar",
           href: "/docs/components/avatar",
           items: [],
+          label: "Done",
         },
         {
           title: "Badge",
