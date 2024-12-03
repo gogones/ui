@@ -180,6 +180,18 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  /* Hide arrow input number for Chrome, Safari, Edge, Opera */
+  .no-arrow-number::-webkit-outer-spin-button,
+  .no-arrow-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide arrow input number for Firefox */
+  .no-arrow-number[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
 
 @media (max-width: 640px) {
