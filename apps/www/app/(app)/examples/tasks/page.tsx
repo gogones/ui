@@ -5,7 +5,7 @@ import Image from "next/image"
 import { z } from "zod"
 
 import { columns } from "./components/columns"
-import { DataTable } from "./components/data-table"
+import { TaskTable } from "./components/task-table"
 import { UserNav } from "./components/user-nav"
 import { taskSchema } from "./data/schema"
 
@@ -58,7 +58,7 @@ export default async function TaskPage() {
             <UserNav />
           </div>
         </div>
-        <DataTable data={tasks} columns={columns} />
+        <TaskTable data={tasks} columns={columns} />
       </div>
     </>
   )
