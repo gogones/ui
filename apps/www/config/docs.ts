@@ -374,7 +374,7 @@ export const docsConfig: DocsConfig = {
           title: "Table",
           href: "/docs/components/table",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Table Grid",
