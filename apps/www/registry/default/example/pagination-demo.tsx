@@ -1,10 +1,12 @@
+import * as React from "react"
+
 import {
   Pagination,
   PaginationContent,
   PaginationEllipsis,
   PaginationItem,
-  PaginationLink,
   PaginationNext,
+  PaginationNumber,
   PaginationPrevious,
 } from "@/registry/default/ui/pagination"
 
@@ -13,24 +15,22 @@ export default function PaginationDemo() {
     <Pagination>
       <PaginationContent>
         <PaginationItem>
-          <PaginationPrevious href="#" />
+          <PaginationPrevious />
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#">1</PaginationLink>
+          <PaginationNumber>1</PaginationNumber>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#" isActive>
-            2
-          </PaginationLink>
+          <PaginationNumber isActive>2</PaginationNumber>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#">3</PaginationLink>
+          <PaginationNumber>3</PaginationNumber>
         </PaginationItem>
         <PaginationItem>
           <PaginationEllipsis />
         </PaginationItem>
         <PaginationItem>
-          <PaginationNext href="#" />
+          <PaginationNext />
         </PaginationItem>
       </PaginationContent>
     </Pagination>

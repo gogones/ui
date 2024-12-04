@@ -49,7 +49,7 @@ import {
   PaginationContent,
   PaginationEllipsis,
   PaginationItem,
-  PaginationLink,
+  PaginationNumber,
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination"
@@ -59,47 +59,18 @@ import {
 <Pagination>
   <PaginationContent>
     <PaginationItem>
-      <PaginationPrevious href="#" />
+      <PaginationPrevious />
     </PaginationItem>
     <PaginationItem>
-      <PaginationLink href="#">1</PaginationLink>
+      <PaginationNumber>1</PaginationNumber>
     </PaginationItem>
     <PaginationItem>
       <PaginationEllipsis />
     </PaginationItem>
     <PaginationItem>
-      <PaginationNext href="#" />
+      <PaginationNext />
     </PaginationItem>
   </PaginationContent>
 </Pagination>
 ```
 
-### Next.js
-
-By default the `<PaginationLink />` component will render an `<a />` tag.
-
-To use the Next.js `<Link />` component, make the following updates to `pagination.tsx`.
-
-```diff showLineNumbers /typeof Link/ {1}
-+ import Link from "next/link"
-
-- type PaginationLinkProps = ... & React.ComponentProps<"a">
-+ type PaginationLinkProps = ... & React.ComponentProps<typeof Link>
-
-const PaginationLink = ({...props }: ) => (
-  <PaginationItem>
--   <a>
-+   <Link>
-      // ...
--   </a>
-+   </Link>
-  </PaginationItem>
-)
-
-```
-
-<Callout className="mt-6">
-
-**Note:** We are making updates to the cli to automatically do this for you.
-
-</Callout>

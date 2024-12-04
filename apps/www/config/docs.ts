@@ -307,7 +307,7 @@ export const docsConfig: DocsConfig = {
           title: "Pagination",
           href: "/docs/components/pagination",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Popover",

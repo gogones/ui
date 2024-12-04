@@ -47,7 +47,7 @@ export interface UsePaginationProps {
   siblingCount?: number
 }
 
-export interface UsePaginationItem {
+export interface PaginationItem {
   onClick: ReactEventHandler
   type:
     | "page"
@@ -139,7 +139,7 @@ export function usePagination({
   ]
 
   // Map the button type to its page number
-  const buttonPage = (type: UsePaginationItem["type"]) => {
+  const buttonPage = (type: PaginationItem["type"]) => {
     switch (type) {
       case "first":
         return 1
@@ -158,7 +158,7 @@ export function usePagination({
   const items = itemList.map((item) => {
     return typeof item === "number"
       ? {
-          type: "page",
+          type: "page" as const,
           page: item,
           selected: item === page,
           disabled,
