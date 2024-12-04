@@ -13,7 +13,7 @@ type Config = {
 const configAtom = atomWithStorage<Config>("config", {
   style: "default",
   theme: "untr",
-  radius: 1,
+  radius: 0.5,
 })
 
 export function useConfig() {
