@@ -1,14 +1,16 @@
 import { Table } from "@tanstack/react-table"
-import {
-  ChevronLeft,
-  ChevronRight,
-  ChevronsLeft,
-  ChevronsRight,
-  Search,
-} from "lucide-react"
+import { Search } from "lucide-react"
 
 import { usePagination } from "@/registry/default/hooks/use-pagination"
-import { Button } from "@/registry/default/ui/button"
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationNext,
+  PaginationNumber,
+  PaginationPrevious,
+} from "@/registry/default/ui/pagination"
 import {
   Select,
   SelectContent,
@@ -56,88 +58,48 @@ export function DataTablePagination<TData>({
       </div>
 
       <div className="flex items-center space-x-6 lg:space-x-8">
-        <div className="flex items-center space-x-2">
-          {pagination.items.map((item, index) => {
-            switch (item.type) {
-              case "page":
-                return (
-                  <Button
+        <Pagination>
+          <PaginationContent>
+            {pagination.items.map((item, index) => {
+              const paginationItems = {
+                page: (
+                  <PaginationNumber
                     key={index}
-                    variant="outline"
-                    className="h-8 w-8 p-0"
-                    onClick={() => table.setPageIndex(item.page - 1)}
+                    onClick={() => table.setPageIndex((item.page ?? 0) - 1)}
                     disabled={item.disabled}
+                    isActive={item.selected}
                   >
                     {item.page}
-                  </Button>
-                )
-              case "start-ellipsis":
-                return (
-                  <span key={index} className="text-sm">
-                    ...
-                  </span>
-                )
-              case "end-ellipsis":
-                return (
-                  <span key={index} className="text-sm">
-                    ...
-                  </span>
-                )
-              case "first":
-                return (
-                  <Button
+                  </PaginationNumber>
+                ),
+                "start-ellipsis": <PaginationEllipsis key={index} />,
+                "end-ellipsis": <PaginationEllipsis key={index} />,
+                previous: (
+                  <PaginationPrevious
                     key={index}
-                    variant="outline"
-                    className="h-8 w-8 p-0"
-                    onClick={() => table.setPageIndex(0)}
-                    disabled={item.disabled}
-                  >
-                    <span className="sr-only">Go to first page</span>
-                    <ChevronsLeft />
-                  </Button>
-                )
-              case "previous":
-                return (
-                  <Button
-                    key={index}
-                    variant="outline"
-                    className="h-8 w-8 p-0"
                     onClick={() => table.previousPage()}
                     disabled={item.disabled}
-                  >
-                    <span className="sr-only">Go to previous page</span>
-                    <ChevronLeft />
-                  </Button>
-                )
-              case "next":
-                return (
-                  <Button
+                  />
+                ),
+                next: (
+                  <PaginationNext
                     key={index}
-                    variant="outline"
-                    className="h-8 w-8 p-0"
                     onClick={() => table.nextPage()}
                     disabled={item.disabled}
-                  >
-                    <span className="sr-only">Go to next page</span>
-                    <ChevronRight />
-                  </Button>
-                )
-              case "last":
-                return (
-                  <Button
-                    key={index}
-                    variant="outline"
-                    className="h-8 w-8 p-0"
-                    onClick={() => table.setPageIndex(table.getPageCount() - 1)}
-                    disabled={item.disabled}
-                  >
-                    <span className="sr-only">Go to last page</span>
-                    <ChevronsRight />
-                  </Button>
-                )
-            }
-          })}
-        </div>
+                  />
+                ),
+                first: undefined,
+                last: undefined,
+              } as const
+
+              return (
+                <PaginationItem key={index}>
+                  {paginationItems[item.type]}
+                </PaginationItem>
+              )
+            })}
+          </PaginationContent>
+        </Pagination>
 
         <div className="flex items-center gap-4 text-sm font-medium text-gray-800">
           <span>Go to</span>
