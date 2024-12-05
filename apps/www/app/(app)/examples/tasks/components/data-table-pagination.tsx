@@ -1,3 +1,4 @@
+import { useRef } from "react"
 import { Table } from "@tanstack/react-table"
 import { Search } from "lucide-react"
 
@@ -26,6 +27,7 @@ interface DataTablePaginationProps<TData> {
 export function DataTablePagination<TData>({
   table,
 }: DataTablePaginationProps<TData>) {
+  const inputRef = useRef<HTMLInputElement>(null)
   const pagination = usePagination({
     count: table.getFilteredRowModel().rows.length,
     page: table.getState().pagination.pageIndex + 1,
@@ -42,7 +44,7 @@ export function DataTablePagination<TData>({
               table.setPageSize(Number(value))
             }}
           >
-            <SelectTrigger className="h-8 w-[70px]">
+            <SelectTrigger className="h-full w-[70px]">
               <SelectValue placeholder={table.getState().pagination.pageSize} />
             </SelectTrigger>
             <SelectContent side="top">
@@ -68,6 +70,7 @@ export function DataTablePagination<TData>({
                     onClick={() => table.setPageIndex((item.page ?? 0) - 1)}
                     disabled={item.disabled}
                     isActive={item.selected}
+                    className="font-semibold"
                   >
                     {item.page}
                   </PaginationNumber>
@@ -102,11 +105,22 @@ export function DataTablePagination<TData>({
         </Pagination>
 
         <div className="flex items-center gap-4 text-sm font-medium text-gray-800">
-          <span>Go to</span>
-          <form className="flex items-center">
+          <span className="flex-1">Go to</span>
+          <form
+            className="flex grow-0 items-center"
+            onSubmit={(e) => {
+              e.preventDefault()
+              table.setPageIndex((inputRef.current?.valueAsNumber ?? 0) - 1)
+
+              if (inputRef.current) {
+                inputRef.current.value = ""
+              }
+            }}
+          >
             <div className="flex items-center rounded-sm border border-gray-200 bg-white p-2 shadow-sm">
               <span className="mr-1">Page</span>
               <input
+                ref={inputRef}
                 type="number"
                 min={1}
                 className="no-arrow-number w-4 font-semibold focus:outline-none"
