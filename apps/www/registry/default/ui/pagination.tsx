@@ -7,7 +7,7 @@ import { Button, ButtonProps } from "@/registry/default/ui/button"
 const Pagination = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div
     aria-label="pagination"
-    className={cn("mx-auto flex w-full justify-center", className)}
+    className={cn("mx-auto flex justify-center", className)}
     {...props}
   />
 )
