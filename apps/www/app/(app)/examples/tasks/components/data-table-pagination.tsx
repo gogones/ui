@@ -29,7 +29,7 @@ export function DataTablePagination<TData>({
 }: DataTablePaginationProps<TData>) {
   const inputRef = useRef<HTMLInputElement>(null)
   const pagination = usePagination({
-    count: table.getFilteredRowModel().rows.length,
+    count: table.getPageCount(),
     page: table.getState().pagination.pageIndex + 1,
   })
 
@@ -123,6 +123,7 @@ export function DataTablePagination<TData>({
                 ref={inputRef}
                 type="number"
                 min={1}
+                max={table.getPageCount()}
                 className="no-arrow-number w-4 font-semibold focus:outline-none"
                 aria-label="Page number"
               />
