@@ -618,17 +618,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "data-grid-demo",
-    type: "registry:example",
-    registryDependencies: ["data-grid"],
-    files: [
-      {
-        path: "example/data-grid-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "date-picker-demo",
     type: "registry:example",
     registryDependencies: ["button", "calendar", "popover"],
@@ -1200,17 +1189,6 @@ export const examples: Registry = [
     files: [
       {
         path: "example/table-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "table-grid-demo",
-    type: "registry:example",
-    registryDependencies: ["table-grid"],
-    files: [
-      {
-        path: "example/table-grid-demo.tsx",
         type: "registry:example",
       },
     ],

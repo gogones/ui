@@ -537,16 +537,6 @@ export const ui: Registry = [
     ],
   },
   {
-    name: "table-grid",
-    type: "registry:ui",
-    files: [
-      {
-        path: "ui/table-grid.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "tabs",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-tabs"],

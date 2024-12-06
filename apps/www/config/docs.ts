@@ -243,12 +243,6 @@ export const docsConfig: DocsConfig = {
           label: "WIP",
         },
         {
-          title: "Data Grid",
-          href: "/docs/components/data-grid",
-          items: [],
-          label: "WIP",
-        },
-        {
           title: "Date Picker",
           href: "/docs/components/date-picker",
           items: [],
@@ -375,12 +369,6 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/table",
           items: [],
           label: "Done",
-        },
-        {
-          title: "Table Grid",
-          href: "/docs/components/table-grid",
-          items: [],
-          label: "WIP",
         },
         {
           title: "Tabs",
