@@ -5,9 +5,6 @@ component: true
 links:
   doc: https://tanstack.com/table/v8/docs/introduction
 ---
-
-<ComponentPreview name="data-table-demo" />
-
 ## Introduction
 
 Every data table or datagrid I've created has been unique. They all behave differently, have specific sorting and filtering requirements, and work with different data sources.
@@ -158,6 +155,7 @@ import {
   flexRender,
   getCoreRowModel,
   useReactTable,
+  type Table as TableType,
 } from "@tanstack/react-table"
 
 import {
@@ -169,20 +167,13 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[]
-  data: TData[]
+type DataTableProps<T extends RowData> {
+  table: TableType<T>
 }
 
-export function DataTable<TData, TValue>({
-  columns,
-  data,
-}: DataTableProps<TData, TValue>) {
-  const table = useReactTable({
-    data,
-    columns,
-    getCoreRowModel: getCoreRowModel(),
-  })
+export function DataTable<T extends RowData>({
+  table
+}: DataTableProps<T>) {
 
   return (
     <div className="rounded-md border">
@@ -237,7 +228,7 @@ export function DataTable<TData, TValue>({
 
 **Tip**: If you find yourself using `<DataTable />` in multiple places, this is the component you could make reusable by extracting it to `components/ui/data-table.tsx`.
 
-`<DataTable columns={columns} data={data} />`
+`<DataTable table={table} />`
 
 </Callout>
 
@@ -265,9 +256,15 @@ async function getData(): Promise<Payment[]> {
 export default async function DemoPage() {
   const data = await getData()
 
+  const table = useReactTable({
+    data,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+  })
+
   return (
     <div className="container mx-auto py-10">
-      <DataTable columns={columns} data={data} />
+      <DataTable table={table} />
     </div>
   )
 }
