@@ -363,6 +363,7 @@ export const docsConfig: DocsConfig = {
           title: "Switch",
           href: "/docs/components/switch",
           items: [],
+          label: "WIP",
         },
         {
           title: "Table",
