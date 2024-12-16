@@ -1,150 +1,187 @@
 {
   "AlertCircle": {
     "lucide": "AlertCircle",
-    "radix": "ExclamationTriangleIcon"
+    "radix": "ExclamationTriangleIcon",
+    "eva": "AlertTriangle"
   },
   "ArrowLeft": {
     "lucide": "ArrowLeft",
-    "radix": "ArrowLeftIcon"
+    "radix": "ArrowLeftIcon",
+    "eva": "ArrowLeft"
   },
   "ArrowRight": {
     "lucide": "ArrowRight",
-    "radix": "ArrowRightIcon"
+    "radix": "ArrowRightIcon",
+    "eva": "ArrowRight"
   },
   "ArrowUpDown": {
     "lucide": "ArrowUpDown",
-    "radix": "CaretSortIcon"
+    "radix": "CaretSortIcon",
+    "eva": "ArrowDown"
   },
   "BellRing": {
     "lucide": "BellRing",
-    "radix": "BellIcon"
+    "radix": "BellIcon",
+    "eva": "Bell"
   },
   "Bold": {
     "lucide": "Bold",
-    "radix": "FontBoldIcon"
+    "radix": "FontBoldIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Calculator": {
     "lucide": "Calculator",
-    "radix": "ComponentPlaceholderIcon"
+    "radix": "ComponentPlaceholderIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Calendar": {
     "lucide": "Calendar",
-    "radix": "CalendarIcon"
+    "radix": "CalendarIcon",
+    "eva": "Calendar"
   },
   "Check": {
     "lucide": "Check",
-    "radix": "CheckIcon"
+    "radix": "CheckIcon",
+    "eva": "CheckMarkCircle2"
   },
   "ChevronDown": {
     "lucide": "ChevronDown",
-    "radix": "ChevronDownIcon"
+    "radix": "ChevronDownIcon",
+    "eva": "ChevronDown"
   },
   "ChevronLeft": {
     "lucide": "ChevronLeft",
-    "radix": "ChevronLeftIcon"
+    "radix": "ChevronLeftIcon",
+    "eva": "ChevronLeft"
   },
   "ChevronRight": {
     "lucide": "ChevronRight",
-    "radix": "ChevronRightIcon"
+    "radix": "ChevronRightIcon",
+    "eva": "ChevronRight"
   },
   "ChevronUp": {
     "lucide": "ChevronUp",
-    "radix": "ChevronUpIcon"
+    "radix": "ChevronUpIcon",
+    "eva": "ChevronUp"
   },
   "ChevronsUpDown": {
     "lucide": "ChevronsUpDown",
-    "radix": "CaretSortIcon"
+    "radix": "CaretSortIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Circle": {
     "lucide": "Circle",
-    "radix": "DotFilledIcon"
+    "radix": "DotFilledIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Copy": {
     "lucide": "Copy",
-    "radix": "CopyIcon"
+    "radix": "CopyIcon",
+    "eva": "Copy"
   },
   "CreditCard": {
     "lucide": "CreditCard",
-    "radix": "ComponentPlaceholderIcon"
+    "radix": "ComponentPlaceholderIcon",
+    "eva": "CreditCard"
   },
   "GripVertical": {
     "lucide": "GripVertical",
-    "radix": "DragHandleDots2Icon"
+    "radix": "DragHandleDots2Icon",
+    "eva": "QuestionMarkCircle"
   },
   "Italic": {
     "lucide": "Italic",
-    "radix": "FontItalicIcon"
+    "radix": "FontItalicIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Loader2": {
     "lucide": "Loader2",
-    "radix": "ReloadIcon"
+    "radix": "ReloadIcon",
+    "eva": "Refresh"
   },
   "Mail": {
     "lucide": "Mail",
-    "radix": "EnvelopeClosedIcon"
+    "radix": "EnvelopeClosedIcon",
+    "eva": "Email"
   },
   "MailOpen": {
     "lucide": "MailOpen",
-    "radix": "EnvelopeOpenIcon"
+    "radix": "EnvelopeOpenIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Minus": {
     "lucide": "Minus",
-    "radix": "MinusIcon"
+    "radix": "MinusIcon",
+    "eva": "Minus"
   },
   "Moon": {
     "lucide": "Moon",
-    "radix": "MoonIcon"
+    "radix": "MoonIcon",
+    "eva": "Moon"
   },
   "MoreHorizontal": {
     "lucide": "MoreHorizontal",
-    "radix": "DotsHorizontalIcon"
+    "radix": "DotsHorizontalIcon",
+    "eva": "MoreHorizontal"
   },
   "PanelLeft": {
     "lucide": "PanelLeft",
-    "radix": "ViewVerticalIcon"
+    "radix": "ViewVerticalIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Plus": {
     "lucide": "Plus",
-    "radix": "PlusIcon"
+    "radix": "PlusIcon",
+    "eva": "Plus"
   },
   "Search": {
     "lucide": "Search",
-    "radix": "MagnifyingGlassIcon"
+    "radix": "MagnifyingGlassIcon",
+    "eva": "Search"
   },
   "Send": {
     "lucide": "Send",
-    "radix": "PaperPlaneIcon"
+    "radix": "PaperPlaneIcon",
+    "eva": "PaperPlane"
   },
   "Settings": {
     "lucide": "Settings",
-    "radix": "GearIcon"
+    "radix": "GearIcon",
+    "eva": "Settings"
   },
   "Slash": {
     "lucide": "Slash",
-    "radix": "SlashIcon"
+    "radix": "SlashIcon",
+    "eva": "Slash"
   },
   "Smile": {
     "lucide": "Smile",
-    "radix": "FaceIcon"
+    "radix": "FaceIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Sun": {
     "lucide": "Sun",
-    "radix": "SunIcon"
+    "radix": "SunIcon",
+    "eva": "Sun"
   },
   "Terminal": {
     "lucide": "Terminal",
-    "radix": "RocketIcon"
+    "radix": "RocketIcon",
+    "eva": "QuestionMarkCircle"
   },
   "Underline": {
     "lucide": "Underline",
-    "radix": "UnderlineIcon"
+    "radix": "UnderlineIcon",
+    "eva": "QuestionMarkCircle"
   },
   "User": {
     "lucide": "User",
-    "radix": "PersonIcon"
+    "radix": "PersonIcon",
+    "eva": "Person"
   },
   "X": {
     "lucide": "X",
-    "radix": "Cross2Icon"
+    "radix": "Cross2Icon",
+    "eva": "CrossCircle"
   }
 }

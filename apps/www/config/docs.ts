@@ -215,6 +215,7 @@ export const docsConfig: DocsConfig = {
           title: "Checkbox",
           href: "/docs/components/checkbox",
           items: [],
+          label: "WIP",
         },
         {
           title: "Collapsible",
@@ -353,6 +354,7 @@ export const docsConfig: DocsConfig = {
           title: "Slider",
           href: "/docs/components/slider",
           items: [],
+          label: "Done",
         },
         {
           title: "Sonner",
@@ -363,7 +365,7 @@ export const docsConfig: DocsConfig = {
           title: "Switch",
           href: "/docs/components/switch",
           items: [],
-          label: "WIP",
+          label: "Done",
         },
         {
           title: "Table",
@@ -375,6 +377,7 @@ export const docsConfig: DocsConfig = {
           title: "Tabs",
           href: "/docs/components/tabs",
           items: [],
+          label: "Done",
         },
         {
           title: "Textarea",

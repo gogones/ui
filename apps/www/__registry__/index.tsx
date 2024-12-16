@@ -661,22 +661,6 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
-    "table-grid": {
-      name: "table-grid",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/ui/table-grid.tsx",
-        type: "registry:ui",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/ui/table-grid.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
     "tabs": {
       name: "tabs",
       description: "",
@@ -1677,22 +1661,6 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
-    "data-grid-demo": {
-      name: "data-grid-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["data-grid"],
-      files: [{
-        path: "registry/default/example/data-grid-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/example/data-grid-demo.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
     "date-picker-demo": {
       name: "date-picker-demo",
       description: "",
@@ -2520,22 +2488,6 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/table-demo.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "table-grid-demo": {
-      name: "table-grid-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["table-grid"],
-      files: [{
-        path: "registry/default/example/table-grid-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/example/table-grid-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",

@@ -15,6 +15,11 @@ export const Icons = {
         default: mod.ExclamationTriangleIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.AlertTriangle,
+      }))
+    ),
   },
   ArrowLeft: {
     lucide: React.lazy(() =>
@@ -25,6 +30,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ArrowLeftIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ArrowLeft,
       }))
     ),
   },
@@ -39,6 +49,11 @@ export const Icons = {
         default: mod.ArrowRightIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ArrowRight,
+      }))
+    ),
   },
   ArrowUpDown: {
     lucide: React.lazy(() =>
@@ -49,6 +64,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.CaretSortIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ArrowDown,
       }))
     ),
   },
@@ -63,6 +83,11 @@ export const Icons = {
         default: mod.BellIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Bell,
+      }))
+    ),
   },
   Bold: {
     lucide: React.lazy(() =>
@@ -73,6 +98,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.FontBoldIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -87,6 +117,11 @@ export const Icons = {
         default: mod.ComponentPlaceholderIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
+      }))
+    ),
   },
   Calendar: {
     lucide: React.lazy(() =>
@@ -97,6 +132,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.CalendarIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Calendar,
       }))
     ),
   },
@@ -111,6 +151,11 @@ export const Icons = {
         default: mod.CheckIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.CheckMarkCircle2,
+      }))
+    ),
   },
   ChevronDown: {
     lucide: React.lazy(() =>
@@ -121,6 +166,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronDownIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ChevronDown,
       }))
     ),
   },
@@ -135,6 +185,11 @@ export const Icons = {
         default: mod.ChevronLeftIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ChevronLeft,
+      }))
+    ),
   },
   ChevronRight: {
     lucide: React.lazy(() =>
@@ -145,6 +200,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ChevronRightIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ChevronRight,
       }))
     ),
   },
@@ -159,6 +219,11 @@ export const Icons = {
         default: mod.ChevronUpIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.ChevronUp,
+      }))
+    ),
   },
   ChevronsUpDown: {
     lucide: React.lazy(() =>
@@ -169,6 +234,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.CaretSortIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -183,6 +253,11 @@ export const Icons = {
         default: mod.DotFilledIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
+      }))
+    ),
   },
   Copy: {
     lucide: React.lazy(() =>
@@ -193,6 +268,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.CopyIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Copy,
       }))
     ),
   },
@@ -207,6 +287,11 @@ export const Icons = {
         default: mod.ComponentPlaceholderIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.CreditCard,
+      }))
+    ),
   },
   GripVertical: {
     lucide: React.lazy(() =>
@@ -217,6 +302,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.DragHandleDots2Icon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -231,6 +321,11 @@ export const Icons = {
         default: mod.FontItalicIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
+      }))
+    ),
   },
   Loader2: {
     lucide: React.lazy(() =>
@@ -241,6 +336,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ReloadIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Refresh,
       }))
     ),
   },
@@ -255,6 +355,11 @@ export const Icons = {
         default: mod.EnvelopeClosedIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Email,
+      }))
+    ),
   },
   MailOpen: {
     lucide: React.lazy(() =>
@@ -265,6 +370,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.EnvelopeOpenIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -279,6 +389,11 @@ export const Icons = {
         default: mod.MinusIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Minus,
+      }))
+    ),
   },
   Moon: {
     lucide: React.lazy(() =>
@@ -289,6 +404,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.MoonIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Moon,
       }))
     ),
   },
@@ -303,6 +423,11 @@ export const Icons = {
         default: mod.DotsHorizontalIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.MoreHorizontal,
+      }))
+    ),
   },
   PanelLeft: {
     lucide: React.lazy(() =>
@@ -313,6 +438,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.ViewVerticalIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -327,6 +457,11 @@ export const Icons = {
         default: mod.PlusIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Plus,
+      }))
+    ),
   },
   Search: {
     lucide: React.lazy(() =>
@@ -337,6 +472,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.MagnifyingGlassIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Search,
       }))
     ),
   },
@@ -351,6 +491,11 @@ export const Icons = {
         default: mod.PaperPlaneIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.PaperPlane,
+      }))
+    ),
   },
   Settings: {
     lucide: React.lazy(() =>
@@ -361,6 +506,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.GearIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Settings,
       }))
     ),
   },
@@ -375,6 +525,11 @@ export const Icons = {
         default: mod.SlashIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Slash,
+      }))
+    ),
   },
   Smile: {
     lucide: React.lazy(() =>
@@ -385,6 +540,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.FaceIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -399,6 +559,11 @@ export const Icons = {
         default: mod.SunIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Sun,
+      }))
+    ),
   },
   Terminal: {
     lucide: React.lazy(() =>
@@ -409,6 +574,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.RocketIcon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
       }))
     ),
   },
@@ -423,6 +593,11 @@ export const Icons = {
         default: mod.UnderlineIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.QuestionMarkCircle,
+      }))
+    ),
   },
   User: {
     lucide: React.lazy(() =>
@@ -435,6 +610,11 @@ export const Icons = {
         default: mod.PersonIcon,
       }))
     ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.Person,
+      }))
+    ),
   },
   X: {
     lucide: React.lazy(() =>
@@ -445,6 +625,11 @@ export const Icons = {
     radix: React.lazy(() =>
       import("@radix-ui/react-icons").then((mod) => ({
         default: mod.Cross2Icon,
+      }))
+    ),
+    eva: React.lazy(() =>
+      import("eva-icons").then((mod) => ({
+        default: mod.CrossCircle,
       }))
     ),
   },
