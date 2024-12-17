@@ -1,0 +1,15 @@
+{
+  "name": "progress-indeterminate",
+  "type": "registry:example",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "example/progress-indeterminate.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\nimport { Progress } from \"@/registry/default/ui/progress\"\n\nexport default function ProgressIndeterminateDemo() {\n  return <Progress variant=\"indeterminate\" className=\"w-[60%]\" />\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

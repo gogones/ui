@@ -2141,6 +2141,22 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "progress-indeterminate": {
+      name: "progress-indeterminate",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["progress"],
+      files: [{
+        path: "registry/default/example/progress-indeterminate.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/progress-indeterminate.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "radio-group-demo": {
       name: "radio-group-demo",
       description: "",

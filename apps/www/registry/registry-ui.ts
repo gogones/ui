@@ -350,6 +350,50 @@ export const ui: Registry = [
         type: "registry:ui",
       },
     ],
+    tailwind: {
+      config: {
+        theme: {
+          extend: {
+            keyframes: {
+              indeterminate1: {
+                "0%": {
+                  left: "-35%",
+                  right: "100%",
+                },
+                "60%": {
+                  left: "100%",
+                  right: "-90%",
+                },
+                "100%": {
+                  left: "100%",
+                  right: "-90%",
+                },
+              },
+              indeterminate2: {
+                "0%": {
+                  left: "-200%",
+                  right: "100%",
+                },
+                "60%": {
+                  left: "107%",
+                  right: "-8%",
+                },
+                "100%": {
+                  left: "107%",
+                  right: "-8%",
+                },
+              },
+            },
+            animation: {
+              indeterminate1:
+                "indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite",
+              indeterminate2:
+                "indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite",
+            },
+          },
+        },
+      },
+    },
   },
   {
     name: "radio-group",

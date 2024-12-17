@@ -952,6 +952,17 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "progress-indeterminate",
+    type: "registry:example",
+    registryDependencies: ["progress"],
+    files: [
+      {
+        path: "example/progress-indeterminate.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "radio-group-demo",
     type: "registry:example",
     registryDependencies: ["radio-group"],
